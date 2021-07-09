@@ -99,11 +99,9 @@ img {
   cursor: pointer;
 }
 
-
-
 .current.header-nav-link.main::after {
-   width: 48px;
- }
+  width: 48px;
+}
 
 .current.header-nav-link::after {
   position: relative;
@@ -112,7 +110,7 @@ img {
   display: block;
   width: 78px;
   height: 4px;
-  
+
   background: var(--button-blue-color);
   border-radius: 2px;
 }
@@ -261,7 +259,6 @@ img {
 .button-hero:hover,
 .button-hero:focus {
   background-color: var(--button-hover-color);
-
 }
 
 /* ================END HERO=================== */
@@ -413,7 +410,7 @@ img {
   width: 100%;
   height: 70px;
   padding-top: 27px;
- 
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -422,12 +419,10 @@ img {
 
   color: var(--primary-white-color);
   background: rgba(47, 48, 58, 0.8);
-
 }
 
 .work-img-wrapper {
   position: relative;
- 
 }
 
 /* .work-image {
@@ -522,8 +517,8 @@ img {
   border-radius: 4px;
   border: none;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-button .portfolio-list-item + .portfolio-list-item {
@@ -715,7 +710,7 @@ img {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-icon-footer {
@@ -752,7 +747,9 @@ img {
 
   background: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -764,7 +761,8 @@ img {
   height: 581px;
 
   background: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -790,5 +788,16 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: scale(0.5);
 }
- 
+
+/* =====ANIMATION FOR BACKDROP============= */
+
+/* @keyframes changeScale {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
